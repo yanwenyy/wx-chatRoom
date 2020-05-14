@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "chatList": "plugin://hello-plugin/chat-list"
+  }
+}

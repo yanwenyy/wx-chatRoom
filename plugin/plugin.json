@@ -1,6 +1,8 @@
 {
   "publicComponents": {
-    "hello-component": "components/hello-component"
+    "hello-component": "components/hello-component",
+    "chat-room": "components/chatRoom/chatRoom",
+    "chat-list": "components/chatList/chatList"
   },
   "pages": {
     "hello-page": "pages/hello-page"

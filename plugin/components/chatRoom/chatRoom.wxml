@@ -1,0 +1,26 @@
+<!--plugin/components/chatRoom/chatRoom.wxml-->
+<view class="chat-body">
+  <view class="chat-head"></view>
+  <scroll-view class="chat-show box-sizing" scroll-y="true" scroll-top='{{scrollTop}}' scroll-with-animation="true" style="height:{{windowHeight-inputHeight-20}}px">
+    <view class="chat-list box-sizing" wx:for="{{list}}" wx:key="index">
+      <view class="list-right" wx:if="{{index%2==0}}">
+        <view class="inline-block chat-msg box-sizing">
+          {{item}}
+          <view class="inline-block list-trange"></view>
+        </view>
+        <image class="chat-user-img" src="" mode="aspectFit"></image>
+      </view>
+      <view class="list-left" wx:if="{{index%2!=0}}">
+        <image class="chat-user-img" src="" mode="aspectFit"></image>
+        <view class="inline-block chat-msg-left box-sizing">
+          {{item}}
+          <view class="inline-block list-trange-left"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="chat-input box-sizing" style="bottom:{{inputHeight}}px">
+    <input type='text' bindinput="input" hold-keyboard="true" value="{{inputMsg}}" class="inline-block" adjust-position="{{inputUp}}" bindfocus="inputFocus" bindblur="inputBlur"></input>
+    <button size="mini" type="primary" class="inline-block" bindtap="sendMsg">发送</button>
+  </view>
+</view>

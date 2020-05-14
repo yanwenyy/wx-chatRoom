@@ -14,5 +14,11 @@ Page({
       items: this.data.items,
       currentItem: this.data.currentItem
     });
+  },
+
+  goChat:function(){
+    wx.navigateTo({
+      url: '../chat/chat',
+    })
   }
 });

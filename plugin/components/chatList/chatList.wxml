@@ -1,0 +1,6 @@
+<!--plugin/components/chatList/chatList.wxml-->
+<view>
+    <navigator url="pages/chatRoom/chatRoom">
+      <button>go home</button>
+    </navigator>
+</view>

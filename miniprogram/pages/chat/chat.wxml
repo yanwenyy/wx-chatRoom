@@ -1,0 +1,2 @@
+<!--miniprogram/pages/chat/chat.wxml-->
+<chatList wssUrl="wss://example.qq.com" parameter="{{parameter}}"/>

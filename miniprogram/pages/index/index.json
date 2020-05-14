@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "hello-list": "plugin://hello-plugin/hello-component"
+    "hello-list": "plugin://hello-plugin/hello-component",
+    "chatRoom":"plugin://hello-plugin/hello-page"
   }
 }
