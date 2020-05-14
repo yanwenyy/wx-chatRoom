@@ -7,7 +7,8 @@ Page({
     windowHeight:'',
     inputHeight:''
   },
-  onLoad: function () {
+  onLoad: function (options) {
+    console.log(options)
     console.log('This is a plugin page!');
     this.setData({
       windowHeight: wx.getSystemInfoSync().windowHeight
